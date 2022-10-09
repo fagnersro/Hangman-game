@@ -138,7 +138,7 @@ function iniciarJogo() {
       }
     } else {
       alert('Você atingiu o limíte de letras incorretas');
-      setTimeout(recarregar, 1000);
+      location.reload();
     }
   };
 }
