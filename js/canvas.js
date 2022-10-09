@@ -71,7 +71,7 @@ function desenharForca(pontos) {
     //poste lateral
 
     let forca = new Image();
-    forca.src = './assets.gamming/forcaa.png';
+    forca.src = './assets/forcaa.png';
     forca.addEventListener('load', () => {
       tabuleiro.drawImage(forca, 290, 0, 200, 350);
     });
@@ -80,7 +80,7 @@ function desenharForca(pontos) {
     //teto
 
     let cabeca = new Image();
-    cabeca.src = './assets/gamming/cabeca.png';
+    cabeca.src = './assets/cabeca.png';
     cabeca.addEventListener('load', () => {
       tabuleiro.drawImage(cabeca, 407, 78, 50, 50);
     });
@@ -88,7 +88,7 @@ function desenharForca(pontos) {
   if (pontos === 6) {
     //corda
     let corpo = new Image();
-    corpo.src = './assets/gamming/corpo2.png';
+    corpo.src = './assets/corpo2.png';
     corpo.addEventListener('load', () => {
       tabuleiro.drawImage(corpo, 395, 126, 70, 70);
     });
@@ -96,7 +96,7 @@ function desenharForca(pontos) {
   if (pontos === 5) {
     //para cara
     let mesquerda = new Image();
-    mesquerda.src = './assets/gamming/maophone2.png';
+    mesquerda.src = './assets/maophone2.png';
     mesquerda.addEventListener('load', () => {
       tabuleiro.drawImage(mesquerda, 357, 80, 50, 70);
     });
@@ -104,7 +104,7 @@ function desenharForca(pontos) {
   if (pontos === 4) {
     //para corpo
     let medireita = new Image();
-    medireita.src = './assets/gamming/maoprancheta.png';
+    medireita.src = './assets/maoprancheta.png';
     medireita.addEventListener('load', () => {
       tabuleiro.drawImage(medireita, 460, 135, 50, 70);
     });
@@ -112,7 +112,7 @@ function desenharForca(pontos) {
   if (pontos === 3) {
     //para perna esquerda
     let cintura = new Image();
-    cintura.src = './assets/gamming/cintura.png';
+    cintura.src = './assets/cintura.png';
     cintura.addEventListener('load', () => {
       tabuleiro.drawImage(cintura, 413, 187, 50, 20);
     });
@@ -120,7 +120,7 @@ function desenharForca(pontos) {
   if (pontos === 2) {
     //para perna direita
     let pernaesquerda = new Image();
-    pernaesquerda.src = './assets/gamming/pernaesquerda.png';
+    pernaesquerda.src = './assets/pernaesquerda.png';
     pernaesquerda.addEventListener('load', () => {
       tabuleiro.drawImage(pernaesquerda, 387, 195, 50, 80);
     });
@@ -128,7 +128,7 @@ function desenharForca(pontos) {
   if (pontos === 1) {
     //para mão izquerda
     let pernadireita = new Image();
-    pernadireita.src = './assets/gamming/pernadireita.png';
+    pernadireita.src = './assets/pernadireita.png';
     pernadireita.addEventListener('load', () => {
       tabuleiro.drawImage(pernadireita, 445, 195, 50, 80);
     });
