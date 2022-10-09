@@ -1,0 +1,163 @@
+.app,
+.section__inicio,
+.section__inicio___makerLogoGame,
+.section__novaPalavra,
+.section__open_canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__inicio {
+  display: flex;
+  width: 50rem;
+  height: 100vh;
+}
+
+.section__inicio___makerLogoGame {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+}
+
+.section__iniciar___logo_game {
+  width: 100%;
+}
+
+.section__iniciar___logo_game {
+  width: 480px;
+  height: 400px;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+/* estilos dos botões primeira sessão */
+.section__iniciar___btn_iniciar,
+.section__iniciar___btn_adicionar_palavra {
+  width: 300px;
+  height: 95px;
+
+  border: none;
+  border-radius: 25px;
+  background: rgb(60, 125, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(60, 125, 142, 1) 0%,
+    rgba(15, 47, 125, 1) 50%,
+    rgba(60, 125, 142, 1) 100%
+  );
+
+  font-family: 'Coming Soon', cursive;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.section__iniciar___btn_iniciar:hover {
+  background: rgb(45, 91, 103);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 91, 103, 1) 0%,
+    rgba(99, 120, 172, 1) 50%,
+    rgba(42, 84, 96, 1) 100%
+  );
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.section__iniciar___btn_adicionar_palavra {
+  width: 200px;
+  height: 55px;
+
+  border-radius: 25px;
+
+  font-family: 'Coming Soon', cursive;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.section__iniciar___btn_adicionar_palavra:hover {
+  background: rgb(45, 91, 103);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 91, 103, 1) 0%,
+    rgba(99, 120, 172, 1) 50%,
+    rgba(42, 84, 96, 1) 100%
+  );
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+/* final dos estililos dos botões primeira sessão */
+/* sessão nova palavra */
+.section__novaPalavra {
+  display: none;
+  width: 50rem;
+  height: 100vh;
+}
+
+.txt_input {
+  width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  border: 1px solid #0a3871;
+
+  font-family: 'Coming Soon', cursive;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+
+  border: none;
+
+  color: #0a3871;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+::placeholder {
+  color: #0a3871;
+  text-transform: lowercase;
+}
+
+.txt_input:focus {
+  border: none;
+  outline: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.info__label {
+  color: #0a3871;
+  font-family: 'Coming Soon', cursive;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+}
+/* fim sessão nova palavras */
+/* sessão open canvaas */
+
+.section__open_canvas {
+  display: none;
+  width: 50rem;
+  height: 100vh;
+
+  justify-content: flex-start;
+}
+
+canvas {
+  border: solid 4px lightblue;
+  border-radius: 24px;
+  margin-bottom: 20px;
+}

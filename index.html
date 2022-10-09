@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo da Forca</title>
+  </head>
+  <body class="app">
+    <header></header>
+
+    <!-- tela de seleção novo jogo ou adição de palavras -->
+
+    <main class="principal">
+      <section class="section__inicio" id="section__inicio">
+        <div class="section__inicio___makerLogoGame">
+          <img
+            src="./assets/logoGame.png"
+            alt="Jogo da forca desenvolvido por Fagner Henrique"
+            class="section__iniciar___logo_game"
+          />
+        </div>
+        <input
+          class="section__iniciar___btn_iniciar"
+          type="button"
+          id="iniciar_jogo"
+          value="Iniciar Jogo"
+        />
+        <input
+          class="section__iniciar___btn_adicionar_palavra"
+          type="button"
+          id="adicionar_palavra"
+          value="Adicionar Palavra"
+          onclick="adicionarPalavra()"
+        />
+      </section>
+      <!--fim tela de seleção novo jogo ou adição de palavras -->
+      <!-- tela de adição de novas palavras -->
+      <section class="section__novaPalavra" id="sect__novaPalavra">
+        <input
+          class="txt_input"
+          type="text"
+          maxlength="8"
+          placeholder="Digite sua palavra"
+          id="input_nova_palavra"
+        />
+        <div class="info">
+          <label for="input_nova_palavra" class="info__label">
+            <img src="./assets/!.png" class="img-alerta" />
+            Máx. 8 caracteres</label
+          >
+        </div>
+        <input
+          class="section__iniciar___btn_iniciar adicionar"
+          type="button"
+          id="adicionar_iniciar"
+          value="Adicionar Iniciar"
+        />
+        <input
+          class="section__iniciar___btn_adicionar_palavra voltar"
+          type="button"
+          id="voltar"
+          value="Voltar"
+        />
+      </section>
+      <!-- tela de adição de novas palavras -->
+      <section class="section__open_canvas" id="sect__open_canvas">
+        <canvas id="forca" height="500px" width="800px"></canvas>
+        <input
+          class="section__iniciar___btn_iniciar"
+          type="button"
+          id="iniciar_jogo"
+          value="Novo Jogo"
+          onclick="recarregar()"
+        />
+        <input
+          class="section__iniciar___btn_adicionar_palavra"
+          type="button"
+          id="adicionar_palavra"
+          value="Sair"
+          onclick="recarregar()"
+        />
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/canvas.js"></script>
+  </body>
+</html>
